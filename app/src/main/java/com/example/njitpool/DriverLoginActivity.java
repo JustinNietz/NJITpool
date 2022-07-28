@@ -22,6 +22,7 @@ public class DriverLoginActivity extends AppCompatActivity {
     TextInputEditText etLoginPassword;
     TextView tvRegisterHere;
     Button btnLogin;
+    Button btnBack;
 
     FirebaseAuth mAuth;
 
@@ -30,19 +31,30 @@ public class DriverLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_login);
 
+
         etLoginEmail = findViewById(R.id.etLoginEmail);
         etLoginPassword = findViewById(R.id.etLoginPass);
         tvRegisterHere = findViewById(R.id.tvRegisterHere);
         btnLogin = findViewById(R.id.btnLogin);
 
+        btnBack = findViewById(R.id.btnBack);
+
         mAuth = FirebaseAuth.getInstance();
 
+        btnBack.setOnClickListener(view ->{
+            goBack();
+        });
         btnLogin.setOnClickListener(view -> {
             loginUser();
         });
         tvRegisterHere.setOnClickListener(view ->{
             startActivity(new Intent(DriverLoginActivity.this, DriverRegisterActivity.class));
         });
+    }
+
+    private void goBack() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void loginUser(){

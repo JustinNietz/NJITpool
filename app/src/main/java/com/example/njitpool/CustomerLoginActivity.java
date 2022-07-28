@@ -22,6 +22,7 @@ public class CustomerLoginActivity extends AppCompatActivity {
     TextInputEditText etLoginPassword;
     TextView tvRegisterHere;
     Button btnLogin;
+    Button btnBack;
 
     FirebaseAuth mAuth;
 
@@ -29,6 +30,8 @@ public class CustomerLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
+
+        btnBack = findViewById(R.id.btnBack);
 
         etLoginEmail = findViewById(R.id.etLoginEmail);
         etLoginPassword = findViewById(R.id.etLoginPass);
@@ -40,11 +43,20 @@ public class CustomerLoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(view -> {
             loginUser();
         });
+
+        btnBack.setOnClickListener(view ->{
+            goBack();
+        });
+
         tvRegisterHere.setOnClickListener(view ->{
             startActivity(new Intent(CustomerLoginActivity.this, CustomerRegisterActivity.class));
         });
     }
 
+    private void goBack() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
     private void loginUser(){
         String email = etLoginEmail.getText().toString();
         String password = etLoginPassword.getText().toString();

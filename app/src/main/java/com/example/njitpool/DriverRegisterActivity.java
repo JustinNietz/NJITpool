@@ -22,6 +22,7 @@ public class DriverRegisterActivity extends AppCompatActivity {
     TextInputEditText etRegPassword;
     TextView tvLoginHere;
     Button btnRegister;
+    Button btnBack;
 
     FirebaseAuth mAuth;
 
@@ -35,15 +36,25 @@ public class DriverRegisterActivity extends AppCompatActivity {
         tvLoginHere = findViewById(R.id.tvLoginHere);
         btnRegister = findViewById(R.id.btnRegister);
 
+        btnBack = findViewById(R.id.btnBack);
+
         mAuth = FirebaseAuth.getInstance();
 
         btnRegister.setOnClickListener(view ->{
             createUser();
         });
 
+        btnBack.setOnClickListener(view ->{
+            goBack();
+        });
         tvLoginHere.setOnClickListener(view ->{
             startActivity(new Intent(DriverRegisterActivity.this, DriverLoginActivity.class));
         });
+    }
+
+    private void goBack() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void createUser(){
