@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class CustomerMainActivity extends AppCompatActivity {
-
+    Button btnGoToMap;
     Button btnLogOut;
     FirebaseAuth mAuth;
 
@@ -18,6 +18,8 @@ public class CustomerMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_main);
+
+        btnGoToMap = findViewById(R.id.goToMap);
 
         btnLogOut = findViewById(R.id.btnLogout);
         mAuth = FirebaseAuth.getInstance();
@@ -27,6 +29,15 @@ public class CustomerMainActivity extends AppCompatActivity {
             startActivity(new Intent(CustomerMainActivity.this, MainActivity.class));
         });
 
+        btnGoToMap.setOnClickListener(view ->{
+            openMaps();
+        });
+
+    }
+
+    private void openMaps() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     @Override

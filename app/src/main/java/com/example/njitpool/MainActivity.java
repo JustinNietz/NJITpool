@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().hide(); //Hiding Action bar on Main
         button1 = findViewById(R.id.customerlogin);
         button2 = findViewById(R.id.driverlogin);
         button1.setOnClickListener(new View.OnClickListener() {
