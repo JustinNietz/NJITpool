@@ -30,13 +30,13 @@ public class CustomerMainActivity extends AppCompatActivity {
         });
 
         btnGoToMap.setOnClickListener(view ->{
-            openMaps();
+            getInfo();
         });
 
     }
 
-    private void openMaps() {
-        Intent intent = new Intent(this, MapsActivity.class);
+    private void getInfo() {
+        Intent intent = new Intent(this, CustomerInfoActivity.class);
         startActivity(intent);
     }
 

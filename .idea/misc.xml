@@ -4,17 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_njitcarpool_splash.xml" value="0.172" />
+        <entry key="app/src/main/res/layout/activity_customer_info.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_customer_login.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_customer_main.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_customer_register.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_driver_login.xml" value="0.16302083333333334" />
-        <entry key="app/src/main/res/layout/activity_driver_main.xml" value="0.16302083333333334" />
+        <entry key="app/src/main/res/layout/activity_driver_main.xml" value="0.4873174031575521" />
         <entry key="app/src/main/res/layout/activity_driver_register.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1812016805013021" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_map2.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.32864583333333336" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/app_bar_map2.xml" value="0.16302083333333334" />
+        <entry key="app/src/main/res/layout/content_map2.xml" value="0.16302083333333334" />
+        <entry key="app/src/main/res/layout/custom_info_contents.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout/custom_info_contentsxml.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/splash_activity.xml" value="0.29693450927734377" />
       </map>

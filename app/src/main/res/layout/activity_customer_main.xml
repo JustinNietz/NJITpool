@@ -23,7 +23,7 @@
         android:id="@+id/goToMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start a Ride"
+        android:text="Take me to NJIT"
         android:backgroundTint="@color/dark_red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
