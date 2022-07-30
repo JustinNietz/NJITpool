@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
+
     tools:context=".CustomerRegisterActivity">
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -14,10 +16,9 @@
         android:layout_height="135dp"
         app:srcCompat="@drawable/ic_njitcarpool_splash" />
 
-
     <LinearLayout
-        android:layout_width="364dp"
-        android:layout_height="398dp"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:orientation="vertical">
@@ -98,8 +99,8 @@
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="371dp"
+        android:layout_height="51dp"
         android:text="Back to Home" />
 
 </LinearLayout>

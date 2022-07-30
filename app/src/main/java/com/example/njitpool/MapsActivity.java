@@ -47,7 +47,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     DatabaseReference databaseReference;
 
     // variable for Text view.
-    private TextView retrieveTV;
+    private TextView retrieve;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +61,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         databaseReference = firebaseDatabase.getReference("driverInfo").child("driverInfo");
 
         // initializing our object class variable.
-        retrieveTV = findViewById(R.id.idTVRetrieveData);
+        retrieve = findViewById(R.id.idTVRetrieveData);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -83,7 +83,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 String value = snapshot.getValue(String.class);
                 // after getting the value we are setting
                 // our value to our text view in below line.
-                retrieveTV.setText(value);
+                retrieve.setText(value);
             }
 
             @Override
@@ -105,7 +105,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 @Override
     public void onMapReady(GoogleMap googleMap) {
 // Construct and use the Intent as in the examples above
-        Uri gmmIntentUri = Uri.parse("geo:0,0?q=11 Elm Street, Westwood, New Jersey");
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + retrieve);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
