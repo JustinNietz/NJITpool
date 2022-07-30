@@ -15,4 +15,6 @@
     <string name="title_activity_maps2">MapsActivity2</string>
     <string name="title_activity_map2">MapActivity2</string>
     <string name="njit">NJIT</string>
+    <string name="_323_dr_martin_luther_king_jr_blvd_newark_nj_07102">323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102</string>
+    <string name="retrieve_data">Retrieve Data</string>
 </resources>

@@ -3,11 +3,13 @@ package com.example.njitpool;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.location.LocationRequest;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -33,6 +35,10 @@ public class CustomerInfoActivity<driverInfo> extends AppCompatActivity {
     // creating a variable for
     // our object class
     com.example.njitpool.DriverInfo driverInfo;
+
+    private TextView AddressText;
+    private Button LocationButton;
+    private LocationRequest locationRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

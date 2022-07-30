@@ -8,10 +8,10 @@
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
         android:backgroundTint="@color/teal_700"
+        android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.009"
@@ -21,10 +21,10 @@
 
     <Button
         android:id="@+id/goToMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take me to NJIT"
+        android:layout_width="177dp"
+        android:layout_height="66dp"
         android:backgroundTint="@color/dark_red"
+        android:text="Take me to NJIT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="62dp"
-        android:layout_height="64dp"
+        android:layout_width="147dp"
+        android:layout_height="120dp"
         app:layout_constraintBottom_toTopOf="@+id/goToMap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

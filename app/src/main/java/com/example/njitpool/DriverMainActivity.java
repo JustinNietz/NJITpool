@@ -2,6 +2,7 @@ package com.example.njitpool;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -83,13 +84,14 @@ public class DriverMainActivity extends AppCompatActivity {
                 // after getting the value we are setting
                 // our value to our text view in below line.
                 retrieveTV.setText(value);
+                Log.i("hello2", "retrieveTV " + retrieveTV);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 // calling on cancelled method when we receive
                 // any error or we are not able to get the data.
-                Toast.makeText(DriverMainActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DriverMainActivity.this, "Failed to get data.", Toast.LENGTH_SHORT).show();
             }
         });
     }
